@@ -23,24 +23,24 @@ const Index = () => {
             <div>
               <h3 className="font-heading font-bold text-lg mb-4">Portfolio</h3>
               <p className="text-sm text-muted-foreground">
-                Étudiante ingénieure passionnée par le développement web, mobile et l'intelligence artificielle.
+                Engineering student passionate about web development, mobile, and artificial intelligence.
               </p>
             </div>
 
             {/* Quick Links */}
             <div>
-              <h3 className="font-heading font-bold text-lg mb-4">Navigation</h3>
+              <h3 className="font-heading font-bold text-lg mb-4">Quick Links</h3>
               <div className="flex flex-col gap-2">
-                <a href="#projects" className="text-sm text-muted-foreground hover:text-primary transition-colors">Projets</a>
-                <a href="#skills" className="text-sm text-muted-foreground hover:text-primary transition-colors">Compétences</a>
-                <a href="#certificates" className="text-sm text-muted-foreground hover:text-primary transition-colors">Certificats</a>
+                <a href="#projects" className="text-sm text-muted-foreground hover:text-primary transition-colors">Projects</a>
+                <a href="#skills" className="text-sm text-muted-foreground hover:text-primary transition-colors">Skills</a>
+                <a href="#certificates" className="text-sm text-muted-foreground hover:text-primary transition-colors">Certificates</a>
                 <a href="#contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">Contact</a>
               </div>
             </div>
 
             {/* Social */}
             <div>
-              <h3 className="font-heading font-bold text-lg mb-4">Réseaux</h3>
+              <h3 className="font-heading font-bold text-lg mb-4">Social</h3>
               <div className="flex gap-4">
                 <a
                   href="https://github.com/yourusername"
