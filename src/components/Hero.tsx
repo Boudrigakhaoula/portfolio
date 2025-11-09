@@ -3,7 +3,7 @@ import { Github, Linkedin, Download, Mail } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 py-20 bg-gradient-to-br from-background via-secondary/30 to-background">
+    <section id="hero" className="min-h-screen flex items-center justify-center px-6 py-20 pt-32 bg-gradient-to-br from-background via-secondary/30 to-background">
       <div className="max-w-6xl mx-auto text-center animate-fade-up">
         <div className="mb-8 inline-block">
           <div className="w-32 h-32 mx-auto rounded-full bg-gradient-accent shadow-medium flex items-center justify-center text-5xl font-bold text-white">
