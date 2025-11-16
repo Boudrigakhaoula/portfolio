@@ -4,12 +4,14 @@ import { Button } from "./ui/button";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeItem, setActiveItem] = useState<string>("Accueil");
 
   const navItems = [
-    { name: "Home", href: "#hero" },
-    { name: "Projects", href: "#projects" },
-    { name: "Skills", href: "#skills" },
-    { name: "Certificates", href: "#certificates" },
+    { name: "Accueil", href: "#hero" },
+    { name: "Expérience", href: "#experience" },
+    { name: "Projets", href: "#projects" },
+    { name: "Compétences", href: "#skills" },
+    { name: "Certificats", href: "#certificates" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -27,10 +29,10 @@ export const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <button
-            onClick={() => scrollToSection("#hero")}
-            className="text-xl font-heading font-bold text-foreground hover:text-primary transition-colors"
+            onClick={() => { scrollToSection("#hero"); setActiveItem("Home"); }}
+            className="text-xl font-heading font-bold mb-0 bg-gradient-to-r from-primary via-accent to-purple-accent bg-clip-text text-transparent hover:opacity-90 transition-all"
           >
-            Portfolio
+            Khaoula Boudriga
           </button>
 
           {/* Desktop Navigation */}
@@ -38,8 +40,8 @@ export const Navbar = () => {
             {navItems.map((item) => (
               <button
                 key={item.name}
-                onClick={() => scrollToSection(item.href)}
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                onClick={() => { scrollToSection(item.href); setActiveItem(item.name); }}
+                className={`text-sm font-medium transition-colors ${activeItem === item.name ? 'bg-gradient-to-r from-primary via-accent to-purple-accent bg-clip-text text-transparent' : 'text-muted-foreground hover:text-primary'}`}
               >
                 {item.name}
               </button>
@@ -64,8 +66,8 @@ export const Navbar = () => {
               {navItems.map((item) => (
                 <button
                   key={item.name}
-                  onClick={() => scrollToSection(item.href)}
-                  className="text-left px-4 py-2 text-muted-foreground hover:text-primary hover:bg-muted/50 rounded-lg transition-colors"
+                  onClick={() => { scrollToSection(item.href); setActiveItem(item.name); }}
+                  className={`text-left px-4 py-2 rounded-lg transition-colors ${activeItem === item.name ? 'bg-gradient-to-r from-primary via-accent to-purple-accent bg-clip-text text-transparent' : 'text-muted-foreground hover:text-primary hover:bg-muted/50'}`}
                 >
                   {item.name}
                 </button>

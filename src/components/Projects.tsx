@@ -1,68 +1,48 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 import { Github, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import bd from "@/data/bd.json";
+import { useNavigate } from "react-router-dom";
 
-const projects = [
-  {
-    title: "EduBridge",
-    description: "Educational platform connecting students and tutors with real-time collaboration features",
-    stack: ["React", "Node.js", "MongoDB", "Socket.io"],
-    github: "https://github.com",
-    demo: "https://demo.com"
-  },
-  {
-    title: "OverTimeOps",
-    description: "DevOps automation tool for managing CI/CD pipelines and infrastructure monitoring",
-    stack: ["Jenkins", "Docker", "Kubernetes", "Python"],
-    github: "https://github.com",
-  },
-  {
-    title: "EcoFinIA",
-    description: "AI-powered financial advisor for sustainable investment recommendations",
-    stack: ["Python", "scikit-learn", "React", "Express.js"],
-    github: "https://github.com",
-    demo: "https://demo.com"
-  },
-  {
-    title: "Hotel Nation",
-    description: "Complete hotel management system with booking, inventory, and customer management",
-    stack: ["Angular", "Spring Boot", "MySQL", "TypeScript"],
-    github: "https://github.com",
-  },
-  {
-    title: "BookShare",
-    description: "Social platform for book lovers to share reviews, recommendations, and reading lists",
-    stack: ["React", "NestJS", "PostgreSQL", "TypeScript"],
-    github: "https://github.com",
-    demo: "https://demo.com"
-  },
-  {
-    title: "PricePoint",
-    description: "Price comparison and tracking tool with real-time notifications for deals",
-    stack: ["Flutter", "Firebase", "Node.js", "MongoDB"],
-    github: "https://github.com",
-  }
-];
+interface Project {
+  title: string;
+  description: string;
+  stack: string[];
+  github?: string;
+  demo?: string;
+}
+
+const projects: Project[] = (bd as unknown as { projects: Project[] }).projects;
 
 export const Projects = () => {
+  const [showAll, setShowAll] = useState(false);
+  const navigate = useNavigate();
+
   return (
     <section id="projects" className="py-20 px-6 bg-secondary/30">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-up">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-primary">
-            Featured Projects
+        
+          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">
+             <span className="text-4xl md:text-5xl font-heading font-bold mb-4 bg-gradient-to-r from-primary via-accent to-purple-accent bg-clip-text text-transparent hover:opacity-90 transition-all">
+             Projets académiques</span>
+             
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A selection of my academic and personal projects showcasing full-stack development skills
-          </p>
+        </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {(() => {
+            const visible = showAll ? projects : projects.slice(0, 3);
+            return visible.map((project, index) => (
             <Card 
               key={index} 
-              className="shadow-soft hover:shadow-medium transition-all duration-300 hover:-translate-y-2 border-2 hover:border-accent/50 bg-card"
+              role="button"
+              onClick={() => navigate(`/project/${index}`)}
+              className="cursor-pointer shadow-soft hover:shadow-medium transition-all duration-300 hover:-translate-y-2 border-2 hover:border-accent/50 bg-card"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <CardHeader>
@@ -78,34 +58,46 @@ export const Projects = () => {
                   ))}
                 </div>
                 <div className="flex gap-3">
-                  <Button 
-                    size="sm" 
-                    variant="outline" 
-                    className="flex-1 hover:bg-primary hover:text-primary-foreground transition-colors"
-                    asChild
-                  >
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Github className="mr-2 h-4 w-4" />
-                      Code
-                    </a>
-                  </Button>
+                  {project.github && (
+                    <Button 
+                      size="sm" 
+                      variant="outline" 
+                      className="flex-1"
+                      onClick={(e) => e.stopPropagation()}
+                      asChild
+                    >
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="mr-2 h-4 w-4" />
+                         Voir le code
+                      </a>
+                    </Button>
+                  )}
                   {project.demo && (
                     <Button 
                       size="sm" 
-                      className="flex-1 bg-accent hover:bg-accent/90"
+                      className="flex-1 bg-gradient-to-r from-purple-600 via-purple-500 to-purple-400 text-white shadow-medium hover:shadow-lg transform hover:-translate-y-0.5 transition-all border-0 ring-1 ring-purple-300/20"
+                      onClick={(e) => e.stopPropagation()}
                       asChild
                     >
                       <a href={project.demo} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="mr-2 h-4 w-4" />
-                        Demo
+                         Démo
                       </a>
                     </Button>
                   )}
                 </div>
               </CardContent>
             </Card>
-          ))}
+            ));
+          })()}
         </div>
+        {projects.length > 3 && (
+          <div className="text-center mt-8">
+            <Button onClick={() => setShowAll((s) => !s)} size="lg" variant="ghost" className="border-2 transform transition-all hover:bg-gradient-to-r hover:from-purple-600 hover:via-purple-500 hover:to-purple-400 hover:text-white hover:-translate-y-0.5 border-0 ring-1 ring-purple-300/20">
+              {showAll ? "Voir moins" : "Voir plus"}
+            </Button>
+          </div>
+        )}
       </div>
     </section>
   );
