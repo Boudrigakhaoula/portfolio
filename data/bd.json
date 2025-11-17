@@ -1,0 +1,271 @@
+{
+  "certificates": [
+    {
+      "title": "Construction d’agents RAG avec LLMs",
+      "issuer": "NVIDIA",
+      "date": "2025",
+      "link": "https://learn.nvidia.com/certificates?id=3DaPkBTLQN6EG96kf7g1nw"
+    },
+    {
+      "title": "Développement d’applications LLM avec l’ingénierie de prompt",
+      "issuer": "NVIDIA",
+      "date": "2025",
+      "link": "https://learn.nvidia.com/certificates?id=WPtoIx-oSImDbi5CXnfivQ"
+    },
+    {
+      "title": "IA générative avec modèles de diffusion",
+      "issuer": "NVIDIA",
+      "date": "2025",
+      "link": "https://learn.nvidia.com/certificates?id=MBowp9m9S169PJKYtdW7PQ"
+    },
+    {
+      "title": "Développement rapide d’applications avec les modèles de langage (LLMs)",
+      "issuer": "NVIDIA",
+      "date": "2025",
+      "link": "https://learn.nvidia.com/certificates?id=syIYehIMQ_GsDlSEfhZwfA#"
+    },
+    {
+      "title": "Formation complète pour développeurs MongoDB",
+      "issuer": "Udemy",
+      "date": "2025",
+      "link": "https://www.udemy.com/certificate/UC-f90ec09f-9b6c-4354-9790-c909f6048713/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com"
+    },
+    {
+      "title": "Python et framework Flask – Cours complet",
+      "issuer": "Udemy",
+      "date": "2025",
+      "link": "https://www.udemy.com/certificate/UC-e4d8a4e7-4f7a-40e7-b06a-5ca66815a983/"
+    },
+    {
+      "title": "Apprentissage supervisé : régression et classification",
+      "issuer": "Coursera",
+      "date": "2024",
+      "link": "https://www.coursera.org/account/accomplishments/verify/ASYNNKMBUS5W?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
+    },
+    {
+      "title": "Scrum Fundamentals Certified (SFC™)",
+      "issuer": "SCRUMstudy",
+      "date": "2024",
+      "link": "https://www.scrumstudy.com/certification/verify?type=SFC&number=1012313"
+    },
+    {
+      "title": "NDG Linux Essentials",
+      "issuer": "Cisco Networking Academy",
+      "date": "2020",
+      "link": "https://drive.google.com/file/d/1DAChJhmd-ftGIVIUBXJyD-eRCLx-uX_0/view?usp=sharing"
+    }
+  ],
+
+  "skillCategories": [
+    {
+      "title": "Langages de programmation",
+      "icon": "Code2",
+      "skills": [
+        "C",
+        "C++",
+        "C#",
+        "Python",
+        "PHP",
+        "HTML5/CSS3",
+        "JavaScript",
+        "TypeScript",
+        "Java",
+        ".NET"
+      ],
+      "color": "text-primary"
+    },
+    {
+      "title": "Frameworks & Libraries",
+      "icon": "Server",
+      "skills": [
+        "Bootstrap",
+        "Laravel",
+        "Angular",
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "Spring Boot",
+        "NestJS"
+      ],
+      "color": "text-secondary"
+    },
+    {
+      "title": "Développement mobile",
+      "icon": "Cpu",
+      "skills": ["Android", "Flutter"],
+      "color": "text-accent"
+    },
+    {
+      "title": "Outils DevOps",
+      "icon": "Container",
+      "skills": ["Git", "GitHub", "Jenkins", "Docker", "CI/CD"],
+      "color": "text-primary"
+    },
+    {
+      "title": "Bases de données",
+      "icon": "Database",
+      "skills": [
+        "MySQL",
+        "phpMyAdmin",
+        "MongoDB",
+        "Oracle",
+        "SQLite",
+        "PostgreSQL"
+      ],
+      "color": "text-secondary"
+    }
+  ],
+
+  "projects": [
+    {
+      "title": "BookShare",
+      "role": "Développeur Full-Stack",
+      "period": "09/2025 – 10/2025",
+      "description": "Plateforme web de partage et d’échange de livres.",
+      "tasks": [
+        "Conception et développement d’une plateforme communautaire d’échange de livres",
+        "Implémentation d’un système d’authentification sécurisé",
+        "Développement des fonctionnalités de gestion des livres (ajout/modification/suppression/catégorisation)",
+        "Ajout de fonctionnalités avancées : wishlist, avis, commentaires, notifications"
+      ],
+      "stack": ["Laravel", "PHP", "MySQL", "Blade", "HTML/CSS"]
+    },
+    {
+      "title": "PFA EduBridge",
+      "role": "Développeur Full-Stack & Mobile",
+      "period": "01/2025 – 05/2025",
+      "description": "Plateforme e-learning intelligente avec application mobile.",
+      "tasks": [
+        "Système complet de gestion des utilisateurs (rôles, permissions, authentification)",
+        "Création et gestion des cours & workshops",
+        "Génération de quiz adaptatifs avec IA et analyse de performance",
+        "Interactions temps réel, feedback et notifications",
+        "Développement d’une application mobile Flutter"
+      ],
+      "stack": ["Angular", "Spring Boot", "MySQL", "Flutter", "IA générative", "DevOps"],
+      "demo": "https://youtu.be/IwlgPZIGV8A?si=KCSd0cHWpr-rEBE3"
+    },
+    {
+      "title": "PricePoint",
+      "role": "Développeur Full-Stack & Data Scientist",
+      "period": "05/2025",
+      "description": "Application web de prédiction des prix immobiliers.",
+      "tasks": [
+        "Collecte et prétraitement des données",
+        "Entraînement de modèles de prédiction (Régression, Random Forest, KNN)",
+        "Création d’une API de prédiction avec Flask",
+        "Conception d'une interface utilisateur simple et intuitive"
+      ],
+      "stack": ["Python", "Flask", "scikit-learn", "HTML/CSS"],
+      "github": "https://github.com/Boudrigakhaoula/PricePoint_ML.git"
+    },
+    {
+      "title": "OverTimeOps",
+      "role": "Développeur Full-Stack / Ingénieure DevOps",
+      "period": "03/2025",
+      "description": "Pipeline DevOps pour la gestion des heures supplémentaires.",
+      "tasks": [
+        "Développement full-stack avec React et Node.js",
+        "Mise en place de tests automatisés avec JUnit",
+        "Configuration d’une pipeline CI/CD complète via Jenkins & Docker",
+        "Automatisation du déploiement avec SSH sur serveurs Ubuntu"
+      ],
+      "stack": ["React.js", "Node.js", "MySQL", "Jenkins", "Docker", "GitHub", "JUnit", "SSH"],
+      "github": "https://github.com/Boudrigakhaoula/DevOps_OverTimeOps.git"
+    },
+    {
+      "title": "Weather App",
+      "role": "Développeur Full-Stack",
+      "period": "02/2025",
+      "description": "Application de météo en temps réel.",
+      "tasks": [
+        "Recherche météo par ville et géolocalisation",
+        "Affichage des prévisions sur 5 jours"
+      ],
+      "stack": ["React.js", "Vite", "Axios", "OpenWeatherMap API", "Geolocation API"],
+      "github": "https://github.com/Boudrigakhaoula/My_Weather.git",
+      "demo": "https://www.linkedin.com/posts/khaoula-boudriga-63717623b_react-vite-weatherapp-activity-7300507432961650688-bZoy?utm_source=share&utm_medium=member_desktop&rcm=ACoAADulnwsBUFOLj2b7_QYgXqZXVWF7NxJbIDw"
+    },
+    {
+      "title": "EcoFinIA",
+      "role": "Développeur Mobile",
+      "period": "01/2025 – 02/2025",
+      "description": "Application Android intelligente de gestion budgétaire.",
+      "tasks": [
+        "Suivi en temps réel des revenus et dépenses",
+        "Calcul automatique du solde",
+        "Chatbot IA d’assistance financière"
+      ],
+      "stack": ["Kotlin", "Firebase", "MVC"],
+      "github": "https://github.com/Boudrigakhaoula/EcoFinIA.git",
+      "demo": "https://youtu.be/hPZkxSVi6RA?si=aaKDRC9aDWD-bWi9"
+    },
+    {
+      "title": "Hotel Nation",
+      "role": "Développeur Full-Stack",
+      "period": "12/2024",
+      "description": "Plateforme de recherche d’hôtels en Tunisie.",
+      "tasks": [
+        "Recherche d’hôtels avec filtres",
+        "Scraping automatique via BeautifulSoup"
+      ],
+      "stack": ["Angular", "Spring Boot", "MongoDB", "BeautifulSoup4"],
+      "github": "https://github.com/Boudrigakhaoula/Hotel_Nation.git",
+      "demo": "https://www.linkedin.com/posts/khaoula-boudriga-63717623b_webdevelopment-fullstack-angular-activity-7274902743893348352-wiJY?utm_source=share&utm_medium=member_desktop&rcm=ACoAADulnwsBUFOLj2b7_QYgXqZXVWF7NxJbIDw"
+    },
+    {
+      "title": "Projet PFA – Esprim",
+      "role": "Développeur Full-Stack",
+      "period": "01/2024 – 05/2024",
+      "description": "Plateforme éducative pour la petite enfance.",
+      "tasks": [
+        "Application web Laravel pour parents et éducateurs",
+        "Application desktop interactive JavaFX pour enfants"
+      ],
+      "stack": ["Laravel", "Blade", "HTML/CSS/JS", "JavaFX", "MySQL"]
+    },
+    {
+      "title": "Système de gestion de stock",
+      "role": "Développeur Desktop",
+      "period": "12/2021",
+      "description": "Système de gestion de stock pour un magasin de téléphonie.",
+      "tasks": [
+        "CRUD complet sur les produits",
+        "Interface desktop intuitive en Java"
+      ],
+      "stack": ["Java", "SQL"],
+      "github": "https://github.com/Boudrigakhaoula/appDesck_java.git"
+    }
+  ],
+
+  "experiences": [
+    {
+      "title": "Stagiaire en Développement Web & IA (Stage d'été)",
+      "company": "École d’Ingénieurs ESPRIM",
+      "location": "Monastir, Tunisie",
+      "start": "07/2025",
+      "end": "08/2025",
+      "summary": "Conception et développement d’une plateforme e-learning intelligente et personnalisée.",
+      "responsibilities": [
+        "Mise en ligne de cours PDF avec structuration automatique du contenu (chapitres, sections)",
+        "Génération automatique de quiz via Ollama (LLM + analyse sémantique)",
+        "Développement d’un chatbot intelligent d’assistance pédagogique"
+      ],
+      "technologies": ["MongoDB", "Express.js", "React.js", "Node.js", "Ollama", "LLMs"]
+    },
+    {
+      "title": "Stagiaire Génie Logiciel (PFE)",
+      "company": "SWConsulting",
+      "location": "Monastir, Tunisie",
+      "start": "02/2023",
+      "end": "05/2023",
+      "summary": "Développement d’un système de commande de repas en ligne pour restaurants avec gestion de menus et prix.",
+      "responsibilities": [
+        "Conception d’une interface responsive pour clients et restaurateurs",
+        "Implémentation de l'authentification, gestion du panier, commandes en temps réel",
+        "Développement full-stack avec MEAN stack + Bootstrap"
+      ],
+      "technologies": ["Angular", "Node.js", "Express.js", "MongoDB", "Bootstrap"]
+    }
+  ]
+}
