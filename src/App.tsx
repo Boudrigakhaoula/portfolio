@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import ExperienceDetail from "./pages/ExperienceDetail";
 import ProjectDetail from "./pages/ProjectDetail";
 import Layout from "@/components/Layout";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ const App = () => (
       <Sonner />
 
       <Router>
+         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Index />} />

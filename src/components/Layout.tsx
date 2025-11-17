@@ -1,9 +1,24 @@
+
 import React from "react";
 import { Outlet } from "react-router-dom";
 import { Navbar } from "@/components/Navbar";
 import { Github, Linkedin, Mail } from "lucide-react";
-
+import { useNavigate, useLocation } from "react-router-dom";
 export const Layout = () => {
+   const navigate = useNavigate();
+  const location = useLocation();
+const scrollToSection = (id: string) => {
+    if (location.pathname !== "/") {
+      navigate("/"); // retourne à l'accueil
+      setTimeout(() => {
+        const element = document.querySelector(id);
+        element?.scrollIntoView({ behavior: "smooth" });
+      }, 150);
+    } else {
+      const element = document.querySelector(id);
+      element?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -24,12 +39,13 @@ export const Layout = () => {
             <div>
               <h3 className="font-heading font-bold text-lg mb-4">Liens rapides</h3>
               <div className="flex flex-col gap-2">
-                <a href="#projects" className="text-sm text-muted-foreground hover:text-primary transition-colors">Expérience</a>
-                <a href="#experience" className="text-sm text-muted-foreground hover:text-primary transition-colors"> Projets</a>
-                <a href="#skills" className="text-sm text-muted-foreground hover:text-primary transition-colors">Compétences</a>
-                <a href="#certificates" className="text-sm text-muted-foreground hover:text-primary transition-colors">Certificats</a>
-                <a href="#contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">Contact</a>
-              </div>
+                <a href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection("#projects"); }} className="text-sm text-muted-foreground hover:text-primary transition-colors">Projets</a>
+                 <a href="#experience" onClick={(e) => { e.preventDefault(); scrollToSection("#experience"); }} className="text-sm text-muted-foreground hover:text-primary transition-colors">Expérience</a>
+                <a href="#skills" onClick={(e) => { e.preventDefault(); scrollToSection("#skills"); }} className="text-sm text-muted-foreground hover:text-primary transition-colors">Compétences</a>
+               <a href="#certificates" onClick={(e) => { e.preventDefault(); scrollToSection("#certificates"); }} className="text-sm text-muted-foreground hover:text-primary transition-colors">Certificats</a>
+              <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection("#contact"); }} className="text-sm text-muted-foreground hover:text-primary transition-colors">Contact</a>
+          </div>
+
             </div>
 
             {/* Réseaux */}

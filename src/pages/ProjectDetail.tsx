@@ -40,7 +40,7 @@ const ProjectDetail: React.FC = () => {
     <main className="container mx-auto py-20 px-6">
       <div className="max-w-4xl mx-auto">
         <header className="mb-6">
-          <h1 className="text-4xl font-heading font-bold mb-2">{project.title}</h1>
+          <h1 className="text-4xl font-heading font-bold mb-2 bg-gradient-to-r from-primary via-accent to-purple-accent bg-clip-text text-transparent">{project.title}</h1>
           <div className="flex items-center gap-4 text-sm text-muted-foreground">
             {project.role && <span className="font-medium">{project.role}</span>}
             {project.period && <span className="text-sm">{project.period}</span>}

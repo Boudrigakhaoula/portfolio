@@ -32,19 +32,26 @@ export const Hero = () => {
 
         <div className="flex flex-wrap gap-4 justify-center mb-12">
           {/* Place `khaoula-boudriga-cv.pdf` in the `public/` folder at project root so it's available at `/khaoula-boudriga-cv.pdf` */}
-          <a href="/KHAOULA-BOUDRIGA-CV.pdf" download aria-label="Télécharger le CV">
+          <a href="/portfolio/KHAOULA-BOUDRIGA-CV.pdf" download aria-label="Télécharger le CV">
             <Button size="lg" className="gradient-primary shadow-medium  transition-all">
               <Download className="mr-2 h-5 w-5" />
               Télécharger  CV
             </Button>
           </a>
 
-          <a href="#contact" aria-label="Aller à la section contact">
-            <Button size="lg" className="bg-gradient-to-r from-purple-600 via-purple-500 to-purple-400 text-white shadow-medium hover:shadow-lg transform hover:-translate-y-0.5 transition-all border-0 ring-1 ring-purple-300/20">
-              <Mail className="mr-2 h-5 w-5" />
-              Contactez-moi
-            </Button>
-          </a>
+        <button
+  onClick={() => {
+    const el = document.querySelector("#contact");
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  }}
+  aria-label="Scroll to contact"
+>
+  <Button size="lg" className="bg-gradient-to-r from-purple-600 via-purple-500 to-purple-400 text-white shadow-medium hover:shadow-lg transform hover:-translate-y-0.5 transition-all border-0 ring-1 ring-purple-300/20">
+    <Mail className="mr-2 h-5 w-5" />
+    Contactez-moi
+  </Button>
+</button>
+
         </div>
 
         <div className="flex gap-6 justify-center">
