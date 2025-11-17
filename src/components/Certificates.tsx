@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Award } from "lucide-react";
 import { useState } from "react";
-import bd from "@/data/bd.json";
+import bd from "../../public/data/bd.json";
 
 interface Certificate {
   title: string;

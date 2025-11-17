@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Github, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import bd from "@/data/bd.json";
+import bd from "../../public/data/bd.json";
 import { useNavigate } from "react-router-dom";
 
 interface Project {

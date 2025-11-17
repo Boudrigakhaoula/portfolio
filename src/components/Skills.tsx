@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Code2, Server, Brain, Container, Database, Cpu } from "lucide-react";
-import bd from "@/data/bd.json";
+import bd from "../../public/data/bd.json";
 
 interface SkillCategoryRaw {
   title: string;

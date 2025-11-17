@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Briefcase, Calendar, MapPin } from "lucide-react";
-import bd from "@/data/bd.json";
+import bd from "../../public/data/bd.json";
 
 interface Experience {
   title: string;
