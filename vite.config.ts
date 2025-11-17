@@ -5,6 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // When building for GitHub Pages under a repo (not username.github.io),
+  // set `base` to the repo name so built asset paths point to `/portfolio/`.
+  base: mode === "development" ? "/" : "/portfolio/",
   server: {
     host: "::",
     port: 8080,
