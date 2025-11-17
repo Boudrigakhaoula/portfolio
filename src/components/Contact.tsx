@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Github, Phone } from "lucide-react";
 
 export const Contact = () => {
   return (
@@ -15,7 +15,10 @@ export const Contact = () => {
         </p>
 
         {/* CONTACT ITEMS */}
-        <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+        <div className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-6">
+          
+          
+
           {/* Email */}
           <Card className="shadow-soft border-2 w-full md:w-auto">
             <CardHeader>
@@ -53,7 +56,23 @@ export const Contact = () => {
               </a>
             </CardContent>
           </Card>
-
+          {/* Téléphone */}
+          <Card className="shadow-soft border-2 w-full md:w-auto">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-lg">
+                <Phone className="h-5 w-5 text-accent" />
+                Téléphone
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <a
+                href="tel:+21623225209"
+                className="text-muted-foreground hover:text-accent transition-colors"
+              >
+                +216 23 225 209
+              </a>
+            </CardContent>
+          </Card>
           {/* GitHub */}
           <Card className="shadow-soft border-2 w-full md:w-auto">
             <CardHeader>
