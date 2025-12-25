@@ -1,5 +1,44 @@
 {
+  "achievements": [
+    {
+      "title": "2ᵉ place – LEONI TUNISIA Hackathon 2025",
+      "event": "LEONI TUNISIA Hackathon 2025",
+      "date": "12/2025",
+      "rank": "2ᵉ place 🥈",
+      "description": "Très heureuse d'avoir participé au LEONI TUNISIA Hackathon 2025 les 4 et 5 décembre ! Avec mon équipe, nous avons remporté la 2ᵉ place sur 10 groupes pour le Projet 1 — une expérience intense, stimulante et très enrichissante.",
+      "highlights": [
+        "Travail sur une solution digitale innovante",
+        "Application des compétences techniques en conditions réelles",
+        "Collaboration efficace sous pression",
+        "Découverte de la culture d'innovation chez LEONI"
+      ],
+      "note": "ESPRIM a été brillamment représentée : Top 1 et Top 2 du Hackathon ! Une vraie fierté pour notre faculté.",
+      "gallery": ["leoni1.jpg", "leoni2.jpg", "leoni3.jpg", "leoni4.jpg", "leoni5.jpg", "leoni6.jpg", "leoni7.jpg", "leoni8.jpg"]
+    },
+    {
+      "title": "1ʳᵉ place – Bal de Projet 12ᵉ Édition",
+      "event": "Bal de Projet – 12ᵉ Édition",
+      "date": "2025",
+      "rank": "1ʳᵉ place 🏅",
+      "description": "Edu Bridge a triomphé à la 12ᵉ Édition du Bal de Projet, remportant la victoire dans la catégorie Développement Web et Mobile ! Cette réussite est le fruit de mois de travail acharné, de détermination et d'une vision partagée pour faire la différence grâce à l'éducation et la technologie.",
+      "highlights": [
+        "Victoire dans la catégorie Développement Web et Mobile",
+        "Projet Edu Bridge – plateforme e-learning intelligente",
+        "Travail d'équipe avec les WebSiblings",
+        "Encadrement par Samia Ben Ismail et Dr. Hajer Maraoui"
+      ],
+      "team": "WebSiblings",
+      "gallery": ["bal1.jpg", "bal2.jpg", "bal3.jpg", "bal4.jpg"]
+    }
+  ],
+
   "certificates": [
+    {
+      "title": "Python et framework Django ",
+      "issuer": "Udemy",
+      "date": "2025",
+      "link": "https://www.udemy.com/certificate/UC-4a552aee-ea25-45fa-a84b-1336a3b336cf/"
+    },
     {
       "title": "Construction d’agents RAG avec LLMs",
       "issuer": "NVIDIA",
@@ -85,7 +124,10 @@
         "Node.js",
         "Express.js",
         "Spring Boot",
-        "NestJS"
+        "NestJS",
+        "Flask",
+        "Django"
+
       ],
       "color": "text-secondary"
     },
@@ -98,7 +140,7 @@
     {
       "title": "Outils DevOps",
       "icon": "Container",
-      "skills": ["Git", "GitHub", "Jenkins", "Docker", "CI/CD"],
+      "skills": ["Git", "GitHub", "Jenkins", "Docker", "CI/CD","JUnit"],
       "color": "text-primary"
     },
     {
@@ -117,8 +159,23 @@
   ],
 
   "projects": [
-    {
-      "title": "BookShare",
+    { 
+      "title": "CareerBridge",
+      "role": "Développeuse Full-Stack & IA",
+      "period": "11/2025 – 12/2025",
+      "description": "Coach carrière intelligent basé sur l'IA pour jeunes diplômés.",
+      "tasks": [
+        "Conception et développement d'une application web full-stack agissant comme un coach carrière intelligent",
+        "Implémentation d'une analyse automatique de CV par IA avec scoring détaillé et recommandations personnalisées",
+        "Génération dynamique de lettres de motivation personnalisées à partir d'offres d'emploi",
+        "Mise en place de simulations d'entretiens intelligentes avec évaluation des compétences techniques et soft skills",
+        "Travail approfondi sur le Prompt Engineering afin d'orienter l'IA comme un expert RH"
+      ],
+      "stack": ["Python", "Django", "Google Gemini 1.5 Flash", "Prompt Engineering", "Bootstrap 5", "JavaScript", "BeautifulSoup", "Python-docx"],
+      "demo": "https://www.linkedin.com/posts/khaoula-boudriga-63717623b_esprim-django-python-activity-7407816714039586816-yM3X?utm_source=share&utm_medium=member_desktop&rcm=ACoAADulnwsBUFOLj2b7_QYgXqZXVWF7NxJbIDw"
+    
+    },
+    {      "title": "BookShare",
       "role": "Développeur Full-Stack",
       "period": "09/2025 – 10/2025",
       "description": "Plateforme web de partage et d’échange de livres.",
@@ -128,8 +185,7 @@
         "Développement des fonctionnalités de gestion des livres (ajout/modification/suppression/catégorisation)",
         "Ajout de fonctionnalités avancées : wishlist, avis, commentaires, notifications"
       ],
-      "stack": ["Laravel", "PHP", "MySQL", "Blade", "HTML/CSS"]
-    },
+      "stack": ["Laravel", "PHP", "MySQL", "Blade", "HTML/CSS"]},
     {
       "title": "PFA EduBridge",
       "role": "Développeur Full-Stack & Mobile",
