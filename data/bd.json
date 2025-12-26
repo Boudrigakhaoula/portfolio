@@ -1,8 +1,8 @@
 {
   "achievements": [
     {
-      "title": "2ᵉ place – LEONI TUNISIA Hackathon 2025",
-      "event": "LEONI TUNISIA Hackathon 2025",
+      "title": "2ᵉ place – LEONI University Forum V3V.0",
+      "event": "LEONI University Forum V3V.0 ",
       "date": "12/2025",
       "rank": "2ᵉ place 🥈",
       "description": "Très heureuse d'avoir participé au LEONI TUNISIA Hackathon 2025 les 4 et 5 décembre ! Avec mon équipe, nous avons remporté la 2ᵉ place sur 10 groupes pour le Projet 1 — une expérience intense, stimulante et très enrichissante.",
@@ -16,16 +16,16 @@
       "gallery": ["leoni1.jpg", "leoni2.jpg", "leoni3.jpg", "leoni4.jpg", "leoni5.jpg", "leoni6.jpg", "leoni7.jpg", "leoni8.jpg"]
     },
     {
-      "title": "1ʳᵉ place – Bal de Projet 12ᵉ Édition",
+      "title": "1ʳᵉ place – Bal de Projet 12ᵉ Édition Esprit 2025",
       "event": "Bal de Projet – 12ᵉ Édition",
-      "date": "2025",
+      "date": "07/2025",
       "rank": "1ʳᵉ place 🏅",
       "description": "Edu Bridge a triomphé à la 12ᵉ Édition du Bal de Projet, remportant la victoire dans la catégorie Développement Web et Mobile ! Cette réussite est le fruit de mois de travail acharné, de détermination et d'une vision partagée pour faire la différence grâce à l'éducation et la technologie.",
       "highlights": [
         "Victoire dans la catégorie Développement Web et Mobile",
         "Projet Edu Bridge – plateforme e-learning intelligente",
         "Travail d'équipe avec les WebSiblings",
-        "Encadrement par Samia Ben Ismail et Dr. Hajer Maraoui"
+        "Encadrement par Dr. Samia Ben Ismail et Dr. Hajer Maraoui"
       ],
       "team": "WebSiblings",
       "gallery": ["bal1.jpg", "bal2.jpg", "bal3.jpg", "bal4.jpg"]
@@ -151,10 +151,28 @@
         "phpMyAdmin",
         "MongoDB",
         "Oracle",
-        "SQLite",
-        "PostgreSQL"
+        "SQLite"
       ],
       "color": "text-secondary"
+    },
+    {
+      "title": "Intelligence Artificielle & ML",
+      "icon": "Brain",
+      "skills": [
+        "Ollama",
+        "Api Gemini",
+        "LLMs",
+        "Prompt Engineering",
+        "RAG Agents",
+        "scikit-learn",
+        "Régression Linéaire",
+        "Random Forest",
+        "KNN",
+        "Pandas",
+        "IA Générative",
+        "BeautifulSoup4"
+      ],
+      "color": "text-accent"
     }
   ],
 
